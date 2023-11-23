@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="h-screen flex items-center justify-center">
+        <div class="w-96 border rounded-lg border-solid border-gray-300 shadow-lg">
+          <form action="submit" class="p-8 flex flex-col gap-4 justify-center items-center relative">
+            <div
+              class="w-5 h-5 border-2 border-gray-400 rounded-full hover:border-gray-700 outline-none flex justify-center items-center absolute top-5 right-5 group"
+            >
+              <button class="text-base text-gray-400 group-hover:text-gray-700">&times;</button>
+            </div>
+
+            <p class="font-bold text-base leading-6 text-center tracking-wide text-gray-400">Registration form</p>
+            <div class="flex-col gap-2 w-full">
+              <label for="email" class="font-semibold text-xxs text-gray-400 block">Email</label>
+              <input
+                type="email"
+                class="w-full border px-4 py-2 border-gray-400 rounded-md text-base hover:border-gray-700 outline-none"
+                name="email"
+              />
+            </div>
+            <div class="flex-col gap-2 w-full">
+              <label for="phone" class="font-semibold text-xxs text-gray-400 block">Phone</label>
+              <input
+                type="tel"
+                class="w-full border px-4 py-2 border-gray-400 rounded-md text-base hover:border-gray-700 outline-none"
+                name="phone"
+              />
+            </div>
+            <div class="flex-col gap-2 w-full">
+              <label for="password" class="font-semibold text-xxs text-gray-400 block">Password</label>
+              <input
+                type="password"
+                class="w-full border px-4 py-2 border-gray-400 rounded-md text-base hover:border-gray-700 outline-none"
+                name="password"
+              />
+            </div>
+            <div class="flex flex-row gap-2 w-full">
+              <input
+                type="checkbox"
+                name="user-privacy"
+                class="border border-gray-400 rounded-md hover:border-gray-700 outline-none"
+              />
+              <label for="user-privacy" class="font-semibold text-xxs text-gray-400 block"
+                >I accept the terms and conditions of the Privacy Policy</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="text-base uppercase py-2 w-full bg-blue-400 hover:bg-blue-800 font-bold text-white rounded-md"
+            >
+              sign up
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
